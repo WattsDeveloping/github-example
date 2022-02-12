@@ -90,15 +90,4 @@ class SearchController extends Controller
         return view('pages.results', compact('results', 'username', 'html_url', 'avatar_url'));
     }
 
-    /**
-     * backToSearch
-     * @return Application|Factory|View
-     *
-     * Function handles the global return for searching
-     */
-    public function backToSearch()
-    {
-        return view('pages.search');
-    }
-
 }
