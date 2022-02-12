@@ -1,13 +1,7 @@
-<div class="fullScreen">
-    <div class="inputBox">
-        <form method="get" action="/search">
-            <label>
-                <input type="text" placeholder="Search here...">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}"> <br>
-            </label>
-            <button type="submit">
-                <i class="fas fa-arrow-right"></i>
-            </button>
-        </form>
-    </div>
+<div id="title">
+    <h1>Search GitHub Username</h1>
+    <form method="get" action="/search" class="search-form">
+        <input id="user" name="searchTerm" type="text" placeholder="e.g. michaelawatts">
+        <button id="btn" type="submit">View Repos</button>
+    </form>
 </div>

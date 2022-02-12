@@ -1,47 +1,175 @@
-.fullScreen{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000000d4;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.inputBox{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 2px;
-    border-radius: 3px;
-    box-shadow : inset 0 0.25rem 0.125rem 0 rgb(0 0 0 / 5%);
-    display: flex;
+html {
+    background-color: #24252a;
 }
 
-.inputBox input{
-    height: 45px;
-    width: 270px;
-    border: none;
-    outline: none;
-    font-size: 19px;
-    color: #4a4a4a;
-    padding-left: 15px
+body {
+    width: 100%;
 }
 
-.inputBox button{
-    border: none;
-    background-color: transparent;
+#title {
+    text-align: center;
     vertical-align: middle;
+    position: absolute;
+    padding: 30px;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3C3F58;
+}
+
+
+#title h1 {
+    color: white;
+    vertical-align: middle;
+}
+
+#title i {
+    color: rgb(168, 168, 168);
+}
+
+#user {
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 30px;
+    background: rgba(36, 37, 42, 0.397);
+    color: #fff;
+}
+
+#btn {
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+    background: rgba(0,139,165,1);;
+    color: #fff;
     cursor: pointer;
-    transition: 0.5s
 }
 
-.inputBox button:hover{
-    transform: rotate(360deg);
-
+#back {
+    text-align: center;
+    margin: 30px;
 }
 
-.inputBox button i{
-    font-size: 30px
+#back a {
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+    background: rgba(0,139,165,1);;
+    color: #fff;
+    cursor: pointer;
 }
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container.fixed {
+    max-width: 1200px;
+}
+
+#page_main .full_width_page_header {
+    position: relative;
+    padding: 30px 0;
+}
+
+#page_main .full_width_page_header h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#page_main .full_width_page_header .container h1 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.back-button-div {
+    margin-top: 20px;
+}
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.button {
+    background-color: #324960;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.profile-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-info,  ul {
+    margin-top: 20px;
+    text-align: center;
+    list-style-type: none;
+    color: #ffffff;
+}
+
+.profile-link {
+    color: #ffffff;
+}
+
+

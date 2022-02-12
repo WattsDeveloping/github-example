@@ -1,4 +1,4 @@
 @extends('master')
 @section('content')
-    @include('partials.search')
+    @include('partials._search')
 @endsection

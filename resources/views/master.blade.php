@@ -1,5 +1,5 @@
 <html lang="">
-@include('partials._head')
+@include('partials.templates._head')
     <body>
         <main id="page_main">
             @yield("content")
