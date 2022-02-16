@@ -36,7 +36,6 @@ class SearchController extends Controller
     public function getSearchResults(Request $searchRequest)
     {
             $resUser = $this->client->request('GET', 'https://api.github.com/users/' . $searchRequest->searchTerm);
-
             $userInfo = json_decode($resUser->getBody()->getContents());
 
             if ($userInfo) {
